@@ -39,20 +39,37 @@ public class LinkedList1 {
     }
 
     private Node1 find(String item){
-        if(head==null){
-            System.out.println("Node not found! (List is empty)");
-            return null;
+        Node1 thisLink = head;
+        while(thisLink != null) {
+            if(thisLink.getItem().equals(item)){
+                return thisLink;
+            }
+            thisLink = thisLink.getLink();
         }
-
+        return null;
 
     }
 
     public boolean contains(String item){
-        Iterator<Node1> it =
+
+        Node1 thisLink2 = head;
+        while(thisLink2 != null) {
+            if(thisLink2.getItem()==item){
+                return true;
+            }
+            thisLink2 = thisLink2.getLink();
+        }
+        return false;
     }
 
     public void printList(){
-        toString();
+        Node1 thisLink3 = head;
+
+        while(thisLink3 != null) {
+            System.out.println(thisLink3.toString());
+            thisLink3 = thisLink3.getLink();
+        }
+    }
     }
 
-}
+

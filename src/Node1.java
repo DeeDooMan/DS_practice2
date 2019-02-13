@@ -8,12 +8,8 @@ public class Node1 {
         count=0;
     }
     public Node1(String newItem, int newCount){
-        setData(newItem, newCount);
-    }
-
-    public void setData(String newItem, int newCount){
-        item=newItem;
-        count=newCount;
+        this.item = newItem;
+        this.count=newCount;
     }
 
     public Node1 getLink() {
@@ -30,5 +26,10 @@ public class Node1 {
 
     public int getCount() {
         return count;
+    }
+
+    @Override
+    public String toString() {
+        return item+" "+count+" ";
     }
 }
