@@ -13,7 +13,7 @@ public class LinkedListDemo {
             System.out.println("Список содержит Apples");
         }
         else{
-            System.out.println("Спсок не содержит Apples");
+            System.out.println("Список не содержит Apples");
         }
 
         list.deleteHeadNode();

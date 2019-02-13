@@ -7,9 +7,8 @@ public class Node1 {
         item=null;
         count=0;
     }
-    public Node1(String newItem, int newCount, Node1 linkValue){
+    public Node1(String newItem, int newCount){
         setData(newItem, newCount);
-        link=linkValue;
     }
 
     public void setData(String newItem, int newCount){
